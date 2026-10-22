@@ -1,5 +1,5 @@
 /* float-clay.css — giao diện "thẻ nổi + đất nung" cho VS Code.
-   Viết cho VS Code 1.142.0 (chế độ workbench.experimental.modernUI). Selector bám cấu trúc nội bộ của VS Code,
+   Viết cho VS Code 1.143.0 (chế độ workbench.experimental.modernUI). Selector bám cấu trúc nội bộ của VS Code,
    nên một bản cập nhật lớn có thể làm lệch vài chỗ. Phần màu nằm trong settings (xem settings-float-clay.json);
    file này lo bo góc, khe, bóng, hai viên thuốc ở đáy, icon tệp. Cách cài: xem README.md. */
 
@@ -173,6 +173,18 @@ html .monaco-workbench.floating-panels .part.activitybar.left > .content .monaco
 html .monaco-workbench.floating-panels .part.activitybar .action-item .action-label.uri-icon {
   -webkit-mask-size: 20px !important;
   mask-size: 20px !important;
+}
+
+/* ---- badge activity bar (số thay đổi Git...): to hơn, đậm hơn, viền cùng màu thẻ để tách khỏi icon ---- */
+html .monaco-workbench.floating-panels .part.activitybar .badge .badge-content {
+  min-width: 16px !important;
+  height: 16px !important;
+  line-height: 16px !important;
+  padding: 0 4px !important;
+  border-radius: 8px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 2px var(--vscode-sideBar-background) !important;
 }
 
 /* ---- tab: cao hơn, viên thuốc tròn hẳn ---- */
